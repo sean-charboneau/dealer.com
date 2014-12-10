@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="Page.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="Page.js"></script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Dealer.com Coding Challenge</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <h1>Dealer.com Coding Challenge</h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h2>Key Counts</h2>
+                        <textarea class="form-control key-counts" rows="8">John,2&#10;Jane,3&#10;John,4&#10;Jane,5</textarea>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-default" aria-label="Reset" onclick="resetKeyCounts()">
+                                Reset
+                            </button>
+                            <button type="button" class="btn btn-default" aria-label="Submit" onclick="submitKeyCounts()">
+                                Submit
+                            </button>
+                        </div>
+                        <div class="text-left alert alert-info results key-counts-results" role="alert">
+                            <span class="key-counts-results-text"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h2>Palindrome Detection</h2>
+                        <textarea class="form-control palindrome" rows="8"></textarea>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-default" aria-label="Reset" onclick="resetPalindrome()">
+                                Reset
+                            </button>
+                            <button type="button" class="btn btn-default" aria-label="Submit" onclick="submitPalindrome()">
+                                Submit
+                            </button>
+                        </div>
+                        <div class="text-left alert alert-info results palindrome-results" role="alert">
+                            <span class="palindrome-results-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
